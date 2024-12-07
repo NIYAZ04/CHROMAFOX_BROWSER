@@ -1,8 +1,7 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow , ipcMain} from 'electron';
 import path from 'node:path';
 import started from 'electron-squirrel-startup';
 
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (started) {
   app.quit();
 }
@@ -15,6 +14,8 @@ const createWindow = () => {
     autoHideMenuBar:true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      webviewTag:true,
+      disableHardwareAcceleration: true
     },
   });
   //
@@ -27,8 +28,7 @@ mainWindow.setAlwaysOnTop(true,'screen')
     mainWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
   }
 
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+//  mainWindow.webContents.openDevTools();
 };
 
 app.whenReady().then(() => {
@@ -48,5 +48,4 @@ app.on('window-all-closed', () => {
   }
 });
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.
+ipcMain.on("new-window",createWindow)
