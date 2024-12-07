@@ -1,154 +1,4 @@
-/* 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
 
-#url-input {
-  width: 50vw;
-  padding: 8px;
-  background-color: #ffffff;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  transition: border 0.2s ease-in-out;
-}
-
-#url-input:focus {
-  border: 1px solid #0078d4;
-  box-shadow: 0 0 5px #0078d4;
-}
-
-button {
-  cursor: pointer;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 50%;
-  background-color: #f4f4f9;
-  transition: background-color 0.3s, transform 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: #333;
-}
-
-button:hover {
-  background-color: #e6e6e6;
-  transform: scale(1.1);
-}
-
-button:active {
-  background-color: #dcdcdc;
-}
-
-#browser-tools {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  gap: 10px; 
-}
-
-#button-container {
-  display: flex;
-  gap: 12px;
-}
-
-#go {
-  margin-left: 10px; 
-  padding: 8px 16px; 
-  border-radius: 8px; 
-}
-
-
-#tabs-container {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  margin-bottom: 0;
-  background-color: #f4f4f9;
-  border-bottom: 1px solid #ddd;
-  padding: 5px;
-}
-
-.tab {
-  padding: 8px 16px;
-  margin-right: 8px;
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #333;
-  border-radius: 12px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.tab:hover {
-  background-color: #e6e6e6;
-  transform: scale(1.05);
-}
-
-.tab.active {
-  background-color: #0078d4;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-
-#webview {
-  flex-grow: 1;
-  width: 100%;
-  height: calc(100vh - 100px); 
-  border: none;
-}
-
-#new-tab-button,
-#new-window-button {
-  width: 36px;
-  height: 36px;
-  font-size: 20px;
-}
-
-#back-button,
-#forward-button,
-#reload-button,
-#search-button {
-  width: 36px;
-  height: 36px;
-  font-size: 18px;
-}
-#color-picker {
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-
-
-@media (max-width: 800px) {
-  #url-input {
-    width: 60vw;
-  }
-
-  #go {
-    display: none;
-  }
-
-  #tabs-container {
-    font-size: 12px;
-  }
-} 
- */
  body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
@@ -176,7 +26,6 @@ button:active {
   box-shadow: 0 0 5px #0078d4;
 }
 
-/* Button Styling */
 button {
   cursor: pointer;
   padding: 10px 16px;
@@ -190,7 +39,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 12px; /* Increased spacing between buttons */
+  margin-right: 12px;
 }
 
 button:hover {
@@ -208,7 +57,6 @@ button:focus {
   box-shadow: 0 0 5px #0078d4;
 }
 
-/* Toolbar Styling */
 #browser-tools {
   display: flex;
   align-items: center;
@@ -216,12 +64,12 @@ button:focus {
   border-bottom: 1px solid #ddd;
   padding: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  gap: 15px; /* Adjusted gap between elements */
+  gap: 15px; 
 }
 
 #button-container {
   display: flex;
-  gap: 16px; /* More space between the buttons */
+  gap: 16px; 
 }
 
 #go {
@@ -230,7 +78,6 @@ button:focus {
   border-radius: 8px;
 }
 
-/* Tab Bar Styling */
 #tabs-container {
   display: flex;
   flex-wrap: nowrap;
@@ -262,7 +109,6 @@ button:focus {
   font-weight: bold;
 }
 
-/* Webview Styling */
 #webview {
   flex-grow: 1;
   width: 100%;
@@ -270,7 +116,6 @@ button:focus {
   border: none;
 }
 
-/* Color Picker Button */
 #color-picker {
   width: 36px;
   height: 36px;
@@ -280,7 +125,6 @@ button:focus {
   cursor: pointer;
 }
 
-/* Icon Button Styling */
 #new-tab-button,
 #new-window-button,
 #back-button,
@@ -296,7 +140,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-right: 12px; /* Added spacing between buttons */
+  margin-right: 12px;
 }
 
 #new-tab-button,
@@ -322,7 +166,6 @@ button:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Styles */
 @media (max-width: 800px) {
   #url-input {
     width: 60vw;

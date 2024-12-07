@@ -19,17 +19,34 @@ CHROMAFOX is a modern web browser built using **ElectronJS**, featuring multiple
 
 ## Installation
 
+
 1. Clone the repository:
-   ```bash
+   
    git clone https://github.com/NIYAZ04/CHROMAFOX_BROWSER
+
    cd CHROMAFOX_BROWSER
-Install dependencies:
+
+
+2. Install dependencies:
 
 ```bash
-Copy code
 npm install
-Run the application:
+```
+3. Run the application:
+
+
 
 ```bash
-Copy code
 npm start
+```
+
+
+# Some Glimpses of the Browser
+
+![Screenshot From 2024-12-08 02-02-50](https://github.com/user-attachments/assets/b8340cfc-d066-4ffb-a813-8751c74a51df)
+
+![Screenshot From 2024-12-08 02-03-37](https://github.com/user-attachments/assets/1de63995-5693-4356-9434-c0e1be1df4bc)
+
+![Screenshot From 2024-12-08 02-04-03](https://github.com/user-attachments/assets/eda29927-fea0-462e-b258-9166158b7596)
+
+![Screenshot From 2024-12-08 02-05-36](https://github.com/user-attachments/assets/c21d56c5-ca64-4698-ad8d-d483843d1580)
