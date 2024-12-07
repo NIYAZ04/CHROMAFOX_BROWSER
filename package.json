@@ -31,6 +31,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "electron-color-picker": "^0.2.0",
     "electron-squirrel-startup": "^1.0.1",
     "electron-tabs": "^1.0.4"
   }

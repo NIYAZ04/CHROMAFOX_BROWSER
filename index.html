@@ -18,10 +18,27 @@
         <input id="url-input" required />
       </form>
       <button id="go">go</button>
+
+      <input type="color" id="color-picker" style="display: none;" />
+
+      <label for="color-picker">
+        <img
+          src="./src/assets/color-picker.png"
+          alt="Color Picker"
+          style="cursor: pointer; width: 36px; height: 36px;"
+        />
+      </label>
     </div>
     <div id="tabs-container" style="display: flex; flex-wrap: nowrap;"></div>
     <webview id="webview" src=""></webview>
 
     <script type="module" src="/src/renderer.js"></script>
+    <script>
+      
+      const colorPicker = document.getElementById("color-picker");
+      colorPicker.addEventListener("input", (event) => {
+        document.body.style.backgroundColor = event.target.value;
+      });
+    </script>
   </body>
 </html>

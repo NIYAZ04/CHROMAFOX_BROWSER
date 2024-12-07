@@ -26,7 +26,6 @@ body {
   box-shadow: 0 0 5px #0078d4;
 }
 
-/* Buttons */
 button {
   cursor: pointer;
   padding: 8px 12px;
@@ -126,6 +125,14 @@ button:active {
   height: 36px;
   font-size: 18px;
 }
+#color-picker {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
 
 
 @media (max-width: 800px) {
@@ -140,4 +147,5 @@ button:active {
   #tabs-container {
     font-size: 12px;
   }
-}
+} 
+
